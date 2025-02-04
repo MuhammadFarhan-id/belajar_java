@@ -12,15 +12,16 @@ public class Latihan4 {
         System.out.println("----------"); 
         System.out.print("NISN : ");
         NISN = Input.nextInt();
+        Input.nextLine();
         System.out.print("Nama : ");
-        Nama = Input.next();
+        Nama = Input.nextLine();
         System.out.print("Alamat : ");
-        Alamat = Input.next();
+        Alamat = Input.nextLine();
         System.out.print("Usia : ");
         Usia = Input.nextInt();
 
         // Menampilkan data siswa
-        System.out.println("DATA SISWA");
+        System.out.println("\nDATA SISWA");
         System.out.println("----------");
         System.out.println("NISN: " + NISN);
         System.out.println("Nama: " + Nama);

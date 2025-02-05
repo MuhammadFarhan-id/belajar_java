@@ -2,35 +2,41 @@ package com.belajar;
 import java.util.Scanner;
 
 public class Latihan9 {
-        public static void main(String[] args) {
+    public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         
-        System.out.print("Masukkan nama barang : ");
-        String inputBarang = scanner.nextLine();  
+        System.out.print("Masukkan nama barang: \nlaptop \ntv \nhp \nkamera \ntablet \nhanya yang tertulis diatas yang tersedia :  ");
+        String inputBarang = scanner.nextLine();
         
-        switch (inputBarang) { 
+        System.out.print("Masukkan jumlah barang yang ingin dibeli: ");
+        int jumlahBarang = scanner.nextInt();
+
+        int hargaBarang = 0;
+        
+        switch (inputBarang.toLowerCase()) { 
             case "laptop":
-                System.out.println("Harga Laptop adalah Rp 15.000.000");
+                hargaBarang = 1000;
                 break;
-            case "smartphone":
-                System.out.println("Harga Smartphone adalah Rp 7.000.000");
+            case "tv":
+                hargaBarang = 2000;
                 break;
-            case "headphone":
-                System.out.println("Harga Headphone adalah Rp 1.000.000");
+            case "hp":
+                hargaBarang = 3000;
                 break;
             case "kamera":
-                System.out.println("Harga Kamera adalah Rp 5.000.000");
+                hargaBarang = 4000;
                 break;
             case "tablet":
-                System.out.println("Harga Tablet adalah Rp 4.000.000");
+                hargaBarang = 5000;
                 break;
             default:
                 System.out.println("Barang yang Anda masukkan tidak ditemukan.");
                 break;
         }
         
+        int totalHarga = hargaBarang * jumlahBarang;
         
+        System.out.println("Anda membeli " + jumlahBarang + " " + inputBarang);
+        System.out.println("Total harga: Rp " + totalHarga);
     }
 }
-
-

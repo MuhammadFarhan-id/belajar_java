@@ -40,3 +40,5 @@ public class Latihan9 {
         System.out.println("Total harga: Rp " + totalHarga);
     }
 }
+
+

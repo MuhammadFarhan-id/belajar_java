@@ -10,3 +10,6 @@ public class Latihan1 {
         System.out.println("berat badan : " +B_badan);
     }
 }
+
+//menampilkan umur berdasarkan tahun kelairan
+
